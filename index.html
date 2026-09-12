@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="مجددون الأردن — رسالة تحفيزية لكل متطوع" />
+  <title>مجددون | رسالة للمتطوع</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="atmosphere" aria-hidden="true">
+    <svg class="petal petal-a" viewBox="0 0 200 200" fill="none">
+      <path d="M100 18C72 52 48 88 42 128c-4 28 14 48 38 54 18-32 34-68 42-108C128 48 116 28 100 18Z" fill="currentColor"/>
+      <path d="M100 18c28 34 52 70 58 110 4 28-14 48-38 54-18-32-34-68-42-108C72 48 84 28 100 18Z" fill="currentColor" opacity=".85"/>
+      <path d="M58 132c22 8 44 10 66 0-8 28-28 48-48 52-22-8-32-30-18-52Z" fill="currentColor" opacity=".7"/>
+    </svg>
+    <svg class="petal petal-b" viewBox="0 0 200 200" fill="none">
+      <path d="M100 18C72 52 48 88 42 128c-4 28 14 48 38 54 18-32 34-68 42-108C128 48 116 28 100 18Z" fill="currentColor"/>
+      <path d="M100 18c28 34 52 70 58 110 4 28-14 48-38 54-18-32-34-68-42-108C72 48 84 28 100 18Z" fill="currentColor" opacity=".85"/>
+      <path d="M58 132c22 8 44 10 66 0-8 28-28 48-48 52-22-8-32-30-18-52Z" fill="currentColor" opacity=".7"/>
+    </svg>
+    <svg class="petal petal-c" viewBox="0 0 200 200" fill="none">
+      <path d="M100 18C72 52 48 88 42 128c-4 28 14 48 38 54 18-32 34-68 42-108C128 48 116 28 100 18Z" fill="currentColor"/>
+      <path d="M100 18c28 34 52 70 58 110 4 28-14 48-38 54-18-32-34-68-42-108C72 48 84 28 100 18Z" fill="currentColor" opacity=".85"/>
+      <path d="M58 132c22 8 44 10 66 0-8 28-28 48-48 52-22-8-32-30-18-52Z" fill="currentColor" opacity=".7"/>
+    </svg>
+  </div>
+
+  <main class="stage">
+    <header class="brand">
+      <p class="brand__region">الأردن</p>
+      <h1 class="brand__name">مجددون</h1>
+      <p class="brand__slogan">نُطعم · نُسكن · نُمكّن</p>
+      <p class="brand__tagline">تخصص في أثر التطوع</p>
+    </header>
+
+    <section class="action" aria-labelledby="cta-label">
+      <p id="cta-label" class="sr-only">اضغط للحصول على رسالة تحفيزية</p>
+      <button type="button" class="inspire-btn" id="inspireBtn" aria-describedby="messageRegion">
+        <span class="inspire-btn__glow" aria-hidden="true"></span>
+        <span class="inspire-btn__label">رسالة لي اليوم</span>
+      </button>
+    </section>
+
+    <section
+      class="message"
+      id="messageRegion"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      hidden
+    >
+      <blockquote class="message__quote" id="messageText"></blockquote>
+      <p class="message__hint">اضغط الزر مجدداً لرسالة أخرى</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="footer__link" href="https://www.instagram.com/MujaddidunJo" target="_blank" rel="noopener noreferrer">
+        @MujaddidunJo
+      </a>
+      <span class="footer__sep" aria-hidden="true">|</span>
+      <a class="footer__link" href="tel:0777605151">0777605151</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
